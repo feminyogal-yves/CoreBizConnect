@@ -5,7 +5,6 @@ from .models import ContactMessage
 def index(request):
     return render(request, 'index.html')
 
-
 def contact(request):
     if request.method == 'POST':
         name = request.POST.get('name')
